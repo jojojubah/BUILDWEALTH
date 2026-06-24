@@ -1,0 +1,4180 @@
+{
+  "coordinate_system": "Blender Z-up, metres",
+  "door_behavior": {
+    "on_player_enter": [
+      "set door material to Door Active Black",
+      "present matching interior as a full-screen SwiftUI view"
+    ],
+    "debounce_seconds": 0.75
+  },
+  "building_occlusion_behavior": {
+    "test": "raycast from camera to player each frame",
+    "filter": "BUILDING roots only",
+    "blocked_opacity": 0.0,
+    "clear_opacity": 1.0,
+    "fade_seconds": 0.16
+  },
+  "removed_outer_road_markings": 196,
+  "buildings": [
+    {
+      "building_id": 1,
+      "root_entity": "BUILDING_001",
+      "bounds_min": [
+        -52.543,
+        -52.543,
+        0.3
+      ],
+      "bounds_max": [
+        -48.857,
+        -48.857,
+        4.9791
+      ],
+      "interior_id": "INTERIOR_001"
+    },
+    {
+      "building_id": 2,
+      "root_entity": "BUILDING_002",
+      "bounds_min": [
+        -46.8084,
+        -52.2084,
+        0.3
+      ],
+      "bounds_max": [
+        -43.7916,
+        -49.1916,
+        8.922
+      ],
+      "interior_id": "INTERIOR_002"
+    },
+    {
+      "building_id": 3,
+      "root_entity": "BUILDING_003",
+      "bounds_min": [
+        -52.3396,
+        -46.9396,
+        0.3
+      ],
+      "bounds_max": [
+        -49.0604,
+        -43.6604,
+        10.0829
+      ],
+      "interior_id": "INTERIOR_003"
+    },
+    {
+      "building_id": 4,
+      "root_entity": "BUILDING_004",
+      "bounds_min": [
+        -46.7698,
+        -46.7698,
+        0.3
+      ],
+      "bounds_max": [
+        -43.8302,
+        -43.8302,
+        6.7104
+      ],
+      "interior_id": "INTERIOR_004"
+    },
+    {
+      "building_id": 5,
+      "root_entity": "BUILDING_005",
+      "bounds_min": [
+        -52.4009,
+        -36.4009,
+        0.3
+      ],
+      "bounds_max": [
+        -43.5991,
+        -27.5991,
+        8.549
+      ],
+      "interior_id": "INTERIOR_005"
+    },
+    {
+      "building_id": 6,
+      "root_entity": "BUILDING_006",
+      "bounds_min": [
+        -52.2716,
+        -20.2716,
+        0.3
+      ],
+      "bounds_max": [
+        -49.1284,
+        -17.1284,
+        11.4774
+      ],
+      "interior_id": "INTERIOR_006"
+    },
+    {
+      "building_id": 7,
+      "root_entity": "BUILDING_007",
+      "bounds_min": [
+        -46.9015,
+        -20.3015,
+        0.3
+      ],
+      "bounds_max": [
+        -43.6985,
+        -17.0985,
+        8.4602
+      ],
+      "interior_id": "INTERIOR_007"
+    },
+    {
+      "building_id": 8,
+      "root_entity": "BUILDING_008",
+      "bounds_min": [
+        -52.3893,
+        -14.9893,
+        0.3
+      ],
+      "bounds_max": [
+        -49.0107,
+        -11.6107,
+        11.3906
+      ],
+      "interior_id": "INTERIOR_008"
+    },
+    {
+      "building_id": 9,
+      "root_entity": "BUILDING_009",
+      "bounds_min": [
+        -46.8781,
+        -14.8781,
+        0.3
+      ],
+      "bounds_max": [
+        -43.7219,
+        -11.7219,
+        7.2519
+      ],
+      "interior_id": "INTERIOR_009"
+    },
+    {
+      "building_id": 10,
+      "root_entity": "BUILDING_010",
+      "bounds_min": [
+        -52.6344,
+        -4.3844,
+        0.3
+      ],
+      "bounds_max": [
+        -48.9656,
+        4.3844,
+        11.1316
+      ],
+      "interior_id": "INTERIOR_010"
+    },
+    {
+      "building_id": 11,
+      "root_entity": "BUILDING_011",
+      "bounds_min": [
+        -46.7747,
+        -4.1747,
+        0.3
+      ],
+      "bounds_max": [
+        -43.6253,
+        -1.0253,
+        12.462
+      ],
+      "interior_id": "INTERIOR_011"
+    },
+    {
+      "building_id": 12,
+      "root_entity": "BUILDING_012",
+      "bounds_min": [
+        -46.7546,
+        1.0454,
+        0.3
+      ],
+      "bounds_max": [
+        -43.6454,
+        4.1546,
+        10.6036
+      ],
+      "interior_id": "INTERIOR_012"
+    },
+    {
+      "building_id": 13,
+      "root_entity": "BUILDING_013",
+      "bounds_min": [
+        -52.4327,
+        11.5673,
+        0.3
+      ],
+      "bounds_max": [
+        -48.9673,
+        15.0327,
+        11.2643
+      ],
+      "interior_id": "INTERIOR_013"
+    },
+    {
+      "building_id": 14,
+      "root_entity": "BUILDING_014",
+      "bounds_min": [
+        -47.0581,
+        11.5419,
+        0.3
+      ],
+      "bounds_max": [
+        -43.5419,
+        15.0581,
+        7.1235
+      ],
+      "interior_id": "INTERIOR_014"
+    },
+    {
+      "building_id": 15,
+      "root_entity": "BUILDING_015",
+      "bounds_min": [
+        -52.2367,
+        17.1633,
+        0.3
+      ],
+      "bounds_max": [
+        -49.1633,
+        20.2367,
+        7.5818
+      ],
+      "interior_id": "INTERIOR_015"
+    },
+    {
+      "building_id": 16,
+      "root_entity": "BUILDING_016",
+      "bounds_min": [
+        -46.8301,
+        17.1699,
+        0.3
+      ],
+      "bounds_max": [
+        -43.7699,
+        20.2301,
+        7.6216
+      ],
+      "interior_id": "INTERIOR_016"
+    },
+    {
+      "building_id": 17,
+      "root_entity": "BUILDING_017",
+      "bounds_min": [
+        -52.3434,
+        27.6566,
+        0.3
+      ],
+      "bounds_max": [
+        -43.6566,
+        36.3434,
+        5.6228
+      ],
+      "interior_id": "INTERIOR_017"
+    },
+    {
+      "building_id": 18,
+      "root_entity": "BUILDING_018",
+      "bounds_min": [
+        -52.1192,
+        43.8808,
+        0.3
+      ],
+      "bounds_max": [
+        -43.8808,
+        52.1192,
+        7.5199
+      ],
+      "interior_id": "INTERIOR_018"
+    },
+    {
+      "building_id": 19,
+      "root_entity": "BUILDING_019",
+      "bounds_min": [
+        -36.2181,
+        -52.2181,
+        0.3
+      ],
+      "bounds_max": [
+        -27.7819,
+        -43.7819,
+        5.7551
+      ],
+      "interior_id": "INTERIOR_019"
+    },
+    {
+      "building_id": 20,
+      "root_entity": "BUILDING_020",
+      "bounds_min": [
+        -36.5651,
+        -36.5651,
+        0.3
+      ],
+      "bounds_max": [
+        -32.8349,
+        -32.8349,
+        8.0477
+      ],
+      "interior_id": "INTERIOR_020"
+    },
+    {
+      "building_id": 21,
+      "root_entity": "BUILDING_021",
+      "bounds_min": [
+        -30.9373,
+        -36.3373,
+        0.3
+      ],
+      "bounds_max": [
+        -27.6627,
+        -33.0627,
+        9.3815
+      ],
+      "interior_id": "INTERIOR_021"
+    },
+    {
+      "building_id": 22,
+      "root_entity": "BUILDING_022",
+      "bounds_min": [
+        -36.265,
+        -30.865,
+        0.3
+      ],
+      "bounds_max": [
+        -33.135,
+        -27.735,
+        11.2978
+      ],
+      "interior_id": "INTERIOR_022"
+    },
+    {
+      "building_id": 23,
+      "root_entity": "BUILDING_023",
+      "bounds_min": [
+        -31.1104,
+        -31.1104,
+        0.3
+      ],
+      "bounds_max": [
+        -27.4896,
+        -27.4896,
+        7.7754
+      ],
+      "interior_id": "INTERIOR_023"
+    },
+    {
+      "building_id": 24,
+      "root_entity": "BUILDING_024",
+      "bounds_min": [
+        -36.3062,
+        -20.3062,
+        0.3
+      ],
+      "bounds_max": [
+        -33.0938,
+        -17.0938,
+        8.401
+      ],
+      "interior_id": "INTERIOR_024"
+    },
+    {
+      "building_id": 25,
+      "root_entity": "BUILDING_025",
+      "bounds_min": [
+        -31.0921,
+        -20.4921,
+        0.3
+      ],
+      "bounds_max": [
+        -27.5079,
+        -16.9079,
+        13.0947
+      ],
+      "interior_id": "INTERIOR_025"
+    },
+    {
+      "building_id": 26,
+      "root_entity": "BUILDING_026",
+      "bounds_min": [
+        -36.5193,
+        -15.1193,
+        0.3
+      ],
+      "bounds_max": [
+        -32.8807,
+        -11.4807,
+        16.3856
+      ],
+      "interior_id": "INTERIOR_026"
+    },
+    {
+      "building_id": 27,
+      "root_entity": "BUILDING_027",
+      "bounds_min": [
+        -30.7472,
+        -14.7472,
+        0.3
+      ],
+      "bounds_max": [
+        -27.8528,
+        -11.8528,
+        10.9089
+      ],
+      "interior_id": "INTERIOR_027"
+    },
+    {
+      "building_id": 28,
+      "root_entity": "BUILDING_028",
+      "bounds_min": [
+        -36.3105,
+        -4.3105,
+        0.3
+      ],
+      "bounds_max": [
+        -33.0895,
+        -1.0895,
+        12.4226
+      ],
+      "interior_id": "INTERIOR_028"
+    },
+    {
+      "building_id": 29,
+      "root_entity": "BUILDING_029",
+      "bounds_min": [
+        -30.8588,
+        -4.2588,
+        0.3
+      ],
+      "bounds_max": [
+        -27.7411,
+        -1.1412,
+        13.3973
+      ],
+      "interior_id": "INTERIOR_029"
+    },
+    {
+      "building_id": 30,
+      "root_entity": "BUILDING_030",
+      "bounds_min": [
+        -36.4822,
+        0.9178,
+        0.3
+      ],
+      "bounds_max": [
+        -32.9178,
+        4.4822,
+        13.7823
+      ],
+      "interior_id": "INTERIOR_030"
+    },
+    {
+      "building_id": 31,
+      "root_entity": "BUILDING_031",
+      "bounds_min": [
+        -30.9845,
+        1.0155,
+        0.3
+      ],
+      "bounds_max": [
+        -27.6155,
+        4.3845,
+        15.5071
+      ],
+      "interior_id": "INTERIOR_031"
+    },
+    {
+      "building_id": 32,
+      "root_entity": "BUILDING_032",
+      "bounds_min": [
+        -36.6085,
+        11.6415,
+        0.3
+      ],
+      "bounds_max": [
+        -32.9915,
+        20.3585,
+        7.623
+      ],
+      "interior_id": "INTERIOR_032"
+    },
+    {
+      "building_id": 33,
+      "root_entity": "BUILDING_033",
+      "bounds_min": [
+        -31.0845,
+        11.5155,
+        0.3
+      ],
+      "bounds_max": [
+        -27.3155,
+        15.2845,
+        7.484
+      ],
+      "interior_id": "INTERIOR_033"
+    },
+    {
+      "building_id": 34,
+      "root_entity": "BUILDING_034",
+      "bounds_min": [
+        -31.0826,
+        16.7174,
+        0.3
+      ],
+      "bounds_max": [
+        -27.3174,
+        20.4826,
+        15.5006
+      ],
+      "interior_id": "INTERIOR_034"
+    },
+    {
+      "building_id": 35,
+      "root_entity": "BUILDING_035",
+      "bounds_min": [
+        -36.4696,
+        43.7804,
+        0.3
+      ],
+      "bounds_max": [
+        -33.1304,
+        52.2196,
+        6.9799
+      ],
+      "interior_id": "INTERIOR_035"
+    },
+    {
+      "building_id": 36,
+      "root_entity": "BUILDING_036",
+      "bounds_min": [
+        -31.1151,
+        43.4849,
+        0.3
+      ],
+      "bounds_max": [
+        -27.2849,
+        47.3151,
+        5.8376
+      ],
+      "interior_id": "INTERIOR_036"
+    },
+    {
+      "building_id": 37,
+      "root_entity": "BUILDING_037",
+      "bounds_min": [
+        -30.8367,
+        48.9633,
+        0.3
+      ],
+      "bounds_max": [
+        -27.5633,
+        52.2367,
+        5.7649
+      ],
+      "interior_id": "INTERIOR_037"
+    },
+    {
+      "building_id": 38,
+      "root_entity": "BUILDING_038",
+      "bounds_min": [
+        -20.5071,
+        -52.5071,
+        0.3
+      ],
+      "bounds_max": [
+        -16.8929,
+        -48.8929,
+        10.036
+      ],
+      "interior_id": "INTERIOR_038"
+    },
+    {
+      "building_id": 39,
+      "root_entity": "BUILDING_039",
+      "bounds_min": [
+        -14.829,
+        -52.229,
+        0.3
+      ],
+      "bounds_max": [
+        -11.771,
+        -49.171,
+        11.4087
+      ],
+      "interior_id": "INTERIOR_039"
+    },
+    {
+      "building_id": 40,
+      "root_entity": "BUILDING_040",
+      "bounds_min": [
+        -20.2976,
+        -46.8976,
+        0.3
+      ],
+      "bounds_max": [
+        -17.1024,
+        -43.7024,
+        7.5616
+      ],
+      "interior_id": "INTERIOR_040"
+    },
+    {
+      "building_id": 41,
+      "root_entity": "BUILDING_041",
+      "bounds_min": [
+        -14.7313,
+        -46.7313,
+        0.3
+      ],
+      "bounds_max": [
+        -11.8687,
+        -43.8687,
+        11.3186
+      ],
+      "interior_id": "INTERIOR_041"
+    },
+    {
+      "building_id": 42,
+      "root_entity": "BUILDING_042",
+      "bounds_min": [
+        -20.681,
+        -36.431,
+        0.3
+      ],
+      "bounds_max": [
+        -16.919,
+        -27.569,
+        7.1675
+      ],
+      "interior_id": "INTERIOR_042"
+    },
+    {
+      "building_id": 43,
+      "root_entity": "BUILDING_043",
+      "bounds_min": [
+        -14.7082,
+        -36.1082,
+        0.3
+      ],
+      "bounds_max": [
+        -11.6918,
+        -33.0918,
+        8.8144
+      ],
+      "interior_id": "INTERIOR_043"
+    },
+    {
+      "building_id": 44,
+      "root_entity": "BUILDING_044",
+      "bounds_min": [
+        -14.9682,
+        -31.1682,
+        0.3
+      ],
+      "bounds_max": [
+        -11.4318,
+        -27.6318,
+        10.9972
+      ],
+      "interior_id": "INTERIOR_044"
+    },
+    {
+      "building_id": 45,
+      "root_entity": "BUILDING_045",
+      "bounds_min": [
+        -20.1973,
+        -20.1973,
+        0.3
+      ],
+      "bounds_max": [
+        -11.8027,
+        -11.8027,
+        15.7698
+      ],
+      "interior_id": "INTERIOR_045"
+    },
+    {
+      "building_id": 46,
+      "root_entity": "BUILDING_046",
+      "bounds_min": [
+        -20.6125,
+        -4.3625,
+        0.3
+      ],
+      "bounds_max": [
+        -16.9875,
+        4.3625,
+        12.2332
+      ],
+      "interior_id": "INTERIOR_046"
+    },
+    {
+      "building_id": 47,
+      "root_entity": "BUILDING_047",
+      "bounds_min": [
+        -15.0947,
+        -4.4947,
+        0.3
+      ],
+      "bounds_max": [
+        -11.3053,
+        -0.7053,
+        15.5946
+      ],
+      "interior_id": "INTERIOR_047"
+    },
+    {
+      "building_id": 48,
+      "root_entity": "BUILDING_048",
+      "bounds_min": [
+        -15.1083,
+        0.6917,
+        0.3
+      ],
+      "bounds_max": [
+        -11.2917,
+        4.5083,
+        13.5314
+      ],
+      "interior_id": "INTERIOR_048"
+    },
+    {
+      "building_id": 49,
+      "root_entity": "BUILDING_049",
+      "bounds_min": [
+        -20.1418,
+        11.8582,
+        0.3
+      ],
+      "bounds_max": [
+        -11.8582,
+        20.1418,
+        14.5555
+      ],
+      "interior_id": "INTERIOR_049"
+    },
+    {
+      "building_id": 50,
+      "root_entity": "BUILDING_050",
+      "bounds_min": [
+        -20.3059,
+        27.6941,
+        0.3
+      ],
+      "bounds_max": [
+        -11.6941,
+        36.3059,
+        9.0753
+      ],
+      "interior_id": "INTERIOR_050"
+    },
+    {
+      "building_id": 51,
+      "root_entity": "BUILDING_051",
+      "bounds_min": [
+        -20.4639,
+        43.5361,
+        0.3
+      ],
+      "bounds_max": [
+        -16.9361,
+        47.0639,
+        11.0799
+      ],
+      "interior_id": "INTERIOR_051"
+    },
+    {
+      "building_id": 52,
+      "root_entity": "BUILDING_052",
+      "bounds_min": [
+        -15.1007,
+        43.4993,
+        0.3
+      ],
+      "bounds_max": [
+        -11.4993,
+        47.1007,
+        9.4671
+      ],
+      "interior_id": "INTERIOR_052"
+    },
+    {
+      "building_id": 53,
+      "root_entity": "BUILDING_053",
+      "bounds_min": [
+        -20.32,
+        49.08,
+        0.3
+      ],
+      "bounds_max": [
+        -17.08,
+        52.32,
+        11.5488
+      ],
+      "interior_id": "INTERIOR_053"
+    },
+    {
+      "building_id": 54,
+      "root_entity": "BUILDING_054",
+      "bounds_min": [
+        -14.8989,
+        49.1011,
+        0.3
+      ],
+      "bounds_max": [
+        -11.7011,
+        52.2989,
+        8.64
+      ],
+      "interior_id": "INTERIOR_054"
+    },
+    {
+      "building_id": 55,
+      "root_entity": "BUILDING_055",
+      "bounds_min": [
+        -4.5851,
+        -52.3351,
+        0.3
+      ],
+      "bounds_max": [
+        -1.0149,
+        -43.6649,
+        13.1747
+      ],
+      "interior_id": "INTERIOR_055"
+    },
+    {
+      "building_id": 56,
+      "root_entity": "BUILDING_056",
+      "bounds_min": [
+        1.2836,
+        -52.1164,
+        0.3
+      ],
+      "bounds_max": [
+        4.3164,
+        -49.0836,
+        8.3048
+      ],
+      "interior_id": "INTERIOR_056"
+    },
+    {
+      "building_id": 57,
+      "root_entity": "BUILDING_057",
+      "bounds_min": [
+        1.1102,
+        -47.0898,
+        0.3
+      ],
+      "bounds_max": [
+        4.4898,
+        -43.7102,
+        8.4788
+      ],
+      "interior_id": "INTERIOR_057"
+    },
+    {
+      "building_id": 58,
+      "root_entity": "BUILDING_058",
+      "bounds_min": [
+        -4.5809,
+        -36.3309,
+        0.3
+      ],
+      "bounds_max": [
+        -1.0191,
+        -27.6691,
+        11.0592
+      ],
+      "interior_id": "INTERIOR_058"
+    },
+    {
+      "building_id": 59,
+      "root_entity": "BUILDING_059",
+      "bounds_min": [
+        0.9084,
+        -36.4916,
+        0.3
+      ],
+      "bounds_max": [
+        4.6916,
+        -32.7084,
+        12.5013
+      ],
+      "interior_id": "INTERIOR_059"
+    },
+    {
+      "building_id": 60,
+      "root_entity": "BUILDING_060",
+      "bounds_min": [
+        0.9112,
+        -31.2888,
+        0.3
+      ],
+      "bounds_max": [
+        4.6888,
+        -27.5112,
+        12.7446
+      ],
+      "interior_id": "INTERIOR_060"
+    },
+    {
+      "building_id": 61,
+      "root_entity": "BUILDING_061",
+      "bounds_min": [
+        -4.2895,
+        -20.2895,
+        0.3
+      ],
+      "bounds_max": [
+        -1.1105,
+        -17.1105,
+        15.617
+      ],
+      "interior_id": "INTERIOR_061"
+    },
+    {
+      "building_id": 62,
+      "root_entity": "BUILDING_062",
+      "bounds_min": [
+        1.1223,
+        -20.2777,
+        0.3
+      ],
+      "bounds_max": [
+        4.2777,
+        -17.1223,
+        10.316
+      ],
+      "interior_id": "INTERIOR_062"
+    },
+    {
+      "building_id": 63,
+      "root_entity": "BUILDING_063",
+      "bounds_min": [
+        -4.4846,
+        -15.0846,
+        0.3
+      ],
+      "bounds_max": [
+        -0.9154,
+        -11.5154,
+        14.7481
+      ],
+      "interior_id": "INTERIOR_063"
+    },
+    {
+      "building_id": 64,
+      "root_entity": "BUILDING_064",
+      "bounds_min": [
+        1.1934,
+        -14.8066,
+        0.3
+      ],
+      "bounds_max": [
+        4.2066,
+        -11.7934,
+        9.3126
+      ],
+      "interior_id": "INTERIOR_064"
+    },
+    {
+      "building_id": 65,
+      "root_entity": "BUILDING_065",
+      "bounds_min": [
+        -4.259,
+        -4.259,
+        0.3
+      ],
+      "bounds_max": [
+        4.259,
+        4.259,
+        18.2153
+      ],
+      "interior_id": "INTERIOR_065"
+    },
+    {
+      "building_id": 66,
+      "root_entity": "BUILDING_066",
+      "bounds_min": [
+        -4.5171,
+        11.4829,
+        0.3
+      ],
+      "bounds_max": [
+        -0.8829,
+        15.1171,
+        13.9804
+      ],
+      "interior_id": "INTERIOR_066"
+    },
+    {
+      "building_id": 67,
+      "root_entity": "BUILDING_067",
+      "bounds_min": [
+        1.0496,
+        11.6496,
+        0.3
+      ],
+      "bounds_max": [
+        4.3504,
+        14.9504,
+        14.2761
+      ],
+      "interior_id": "INTERIOR_067"
+    },
+    {
+      "building_id": 68,
+      "root_entity": "BUILDING_068",
+      "bounds_min": [
+        -4.5618,
+        16.8382,
+        0.3
+      ],
+      "bounds_max": [
+        -0.8382,
+        20.5618,
+        15.7401
+      ],
+      "interior_id": "INTERIOR_068"
+    },
+    {
+      "building_id": 69,
+      "root_entity": "BUILDING_069",
+      "bounds_min": [
+        0.9698,
+        16.9698,
+        0.3
+      ],
+      "bounds_max": [
+        4.4302,
+        20.4302,
+        14.4615
+      ],
+      "interior_id": "INTERIOR_069"
+    },
+    {
+      "building_id": 70,
+      "root_entity": "BUILDING_070",
+      "bounds_min": [
+        -4.0828,
+        27.9172,
+        0.3
+      ],
+      "bounds_max": [
+        4.0828,
+        36.0828,
+        23.406
+      ],
+      "interior_id": "INTERIOR_070"
+    },
+    {
+      "building_id": 71,
+      "root_entity": "BUILDING_071",
+      "bounds_min": [
+        -4.274,
+        43.726,
+        0.3
+      ],
+      "bounds_max": [
+        4.274,
+        52.274,
+        10.76
+      ],
+      "interior_id": "INTERIOR_071"
+    },
+    {
+      "building_id": 72,
+      "root_entity": "BUILDING_072",
+      "bounds_min": [
+        11.8414,
+        -52.1586,
+        0.3
+      ],
+      "bounds_max": [
+        20.1586,
+        -43.8414,
+        9.9624
+      ],
+      "interior_id": "INTERIOR_072"
+    },
+    {
+      "building_id": 73,
+      "root_entity": "BUILDING_073",
+      "bounds_min": [
+        11.8146,
+        -36.1854,
+        0.3
+      ],
+      "bounds_max": [
+        20.1854,
+        -27.8146,
+        14.0662
+      ],
+      "interior_id": "INTERIOR_073"
+    },
+    {
+      "building_id": 74,
+      "root_entity": "BUILDING_074",
+      "bounds_min": [
+        11.5801,
+        -20.4199,
+        0.3
+      ],
+      "bounds_max": [
+        15.0199,
+        -16.9801,
+        11.7781
+      ],
+      "interior_id": "INTERIOR_074"
+    },
+    {
+      "building_id": 75,
+      "root_entity": "BUILDING_075",
+      "bounds_min": [
+        16.9573,
+        -20.4427,
+        0.3
+      ],
+      "bounds_max": [
+        20.4427,
+        -16.9573,
+        18.2472
+      ],
+      "interior_id": "INTERIOR_075"
+    },
+    {
+      "building_id": 76,
+      "root_entity": "BUILDING_076",
+      "bounds_min": [
+        11.8371,
+        -14.7629,
+        0.3
+      ],
+      "bounds_max": [
+        14.7629,
+        -11.8371,
+        17.2441
+      ],
+      "interior_id": "INTERIOR_076"
+    },
+    {
+      "building_id": 77,
+      "root_entity": "BUILDING_077",
+      "bounds_min": [
+        17.1501,
+        -14.8499,
+        0.3
+      ],
+      "bounds_max": [
+        20.2499,
+        -11.7501,
+        19.1221
+      ],
+      "interior_id": "INTERIOR_077"
+    },
+    {
+      "building_id": 78,
+      "root_entity": "BUILDING_078",
+      "bounds_min": [
+        12.65,
+        -3.35,
+        0.3
+      ],
+      "bounds_max": [
+        19.35,
+        3.35,
+        34.3
+      ],
+      "interior_id": "INTERIOR_078"
+    },
+    {
+      "building_id": 79,
+      "root_entity": "BUILDING_079",
+      "bounds_min": [
+        11.4696,
+        11.4696,
+        0.3
+      ],
+      "bounds_max": [
+        15.1304,
+        15.1304,
+        13.0389
+      ],
+      "interior_id": "INTERIOR_079"
+    },
+    {
+      "building_id": 80,
+      "root_entity": "BUILDING_080",
+      "bounds_min": [
+        17.1998,
+        11.7998,
+        0.3
+      ],
+      "bounds_max": [
+        20.2002,
+        14.8002,
+        13.3238
+      ],
+      "interior_id": "INTERIOR_080"
+    },
+    {
+      "building_id": 81,
+      "root_entity": "BUILDING_081",
+      "bounds_min": [
+        11.5455,
+        16.9455,
+        0.3
+      ],
+      "bounds_max": [
+        15.0545,
+        20.4545,
+        12.4271
+      ],
+      "interior_id": "INTERIOR_081"
+    },
+    {
+      "building_id": 82,
+      "root_entity": "BUILDING_082",
+      "bounds_min": [
+        17.2271,
+        17.2271,
+        0.3
+      ],
+      "bounds_max": [
+        20.1729,
+        20.1729,
+        10.2877
+      ],
+      "interior_id": "INTERIOR_082"
+    },
+    {
+      "building_id": 83,
+      "root_entity": "BUILDING_083",
+      "bounds_min": [
+        11.7527,
+        27.7527,
+        0.3
+      ],
+      "bounds_max": [
+        14.8473,
+        30.8473,
+        14.3299
+      ],
+      "interior_id": "INTERIOR_083"
+    },
+    {
+      "building_id": 84,
+      "root_entity": "BUILDING_084",
+      "bounds_min": [
+        17.1816,
+        27.7816,
+        0.3
+      ],
+      "bounds_max": [
+        20.2184,
+        30.8184,
+        13.389
+      ],
+      "interior_id": "INTERIOR_084"
+    },
+    {
+      "building_id": 85,
+      "root_entity": "BUILDING_085",
+      "bounds_min": [
+        11.5696,
+        32.9696,
+        0.3
+      ],
+      "bounds_max": [
+        15.0304,
+        36.4304,
+        10.0204
+      ],
+      "interior_id": "INTERIOR_085"
+    },
+    {
+      "building_id": 86,
+      "root_entity": "BUILDING_086",
+      "bounds_min": [
+        17.0723,
+        33.0723,
+        0.3
+      ],
+      "bounds_max": [
+        20.3277,
+        36.3277,
+        11.0145
+      ],
+      "interior_id": "INTERIOR_086"
+    },
+    {
+      "building_id": 87,
+      "root_entity": "BUILDING_087",
+      "bounds_min": [
+        11.7523,
+        43.7523,
+        0.3
+      ],
+      "bounds_max": [
+        14.8477,
+        46.8477,
+        8.2154
+      ],
+      "interior_id": "INTERIOR_087"
+    },
+    {
+      "building_id": 88,
+      "root_entity": "BUILDING_088",
+      "bounds_min": [
+        17.1436,
+        43.7436,
+        0.3
+      ],
+      "bounds_max": [
+        20.2564,
+        46.8564,
+        9.5425
+      ],
+      "interior_id": "INTERIOR_088"
+    },
+    {
+      "building_id": 89,
+      "root_entity": "BUILDING_089",
+      "bounds_min": [
+        11.7599,
+        49.1599,
+        0.3
+      ],
+      "bounds_max": [
+        14.8401,
+        52.2401,
+        11.4255
+      ],
+      "interior_id": "INTERIOR_089"
+    },
+    {
+      "building_id": 90,
+      "root_entity": "BUILDING_090",
+      "bounds_min": [
+        17.2092,
+        49.2092,
+        0.3
+      ],
+      "bounds_max": [
+        20.1908,
+        52.1908,
+        9.6496
+      ],
+      "interior_id": "INTERIOR_090"
+    },
+    {
+      "building_id": 91,
+      "root_entity": "BUILDING_091",
+      "bounds_min": [
+        27.5835,
+        -52.1665,
+        0.3
+      ],
+      "bounds_max": [
+        30.8165,
+        -43.8335,
+        10.4089
+      ],
+      "interior_id": "INTERIOR_091"
+    },
+    {
+      "building_id": 92,
+      "root_entity": "BUILDING_092",
+      "bounds_min": [
+        32.9616,
+        -52.4384,
+        0.3
+      ],
+      "bounds_max": [
+        36.6384,
+        -48.7616,
+        5.8515
+      ],
+      "interior_id": "INTERIOR_092"
+    },
+    {
+      "building_id": 93,
+      "root_entity": "BUILDING_093",
+      "bounds_min": [
+        33.2554,
+        -46.9446,
+        0.3
+      ],
+      "bounds_max": [
+        36.3446,
+        -43.8554,
+        10.7188
+      ],
+      "interior_id": "INTERIOR_093"
+    },
+    {
+      "building_id": 94,
+      "root_entity": "BUILDING_094",
+      "bounds_min": [
+        27.5084,
+        -36.2416,
+        0.3
+      ],
+      "bounds_max": [
+        30.8916,
+        -27.7584,
+        11.6821
+      ],
+      "interior_id": "INTERIOR_094"
+    },
+    {
+      "building_id": 95,
+      "root_entity": "BUILDING_095",
+      "bounds_min": [
+        32.9739,
+        -36.4261,
+        0.3
+      ],
+      "bounds_max": [
+        36.6261,
+        -32.7739,
+        11.153
+      ],
+      "interior_id": "INTERIOR_095"
+    },
+    {
+      "building_id": 96,
+      "root_entity": "BUILDING_096",
+      "bounds_min": [
+        32.9354,
+        -31.2646,
+        0.3
+      ],
+      "bounds_max": [
+        36.6646,
+        -27.5354,
+        8.466
+      ],
+      "interior_id": "INTERIOR_096"
+    },
+    {
+      "building_id": 97,
+      "root_entity": "BUILDING_097",
+      "bounds_min": [
+        27.7611,
+        -20.2389,
+        0.3
+      ],
+      "bounds_max": [
+        30.8389,
+        -17.1611,
+        12.4689
+      ],
+      "interior_id": "INTERIOR_097"
+    },
+    {
+      "building_id": 98,
+      "root_entity": "BUILDING_098",
+      "bounds_min": [
+        32.8717,
+        -20.5283,
+        0.3
+      ],
+      "bounds_max": [
+        36.5283,
+        -16.8717,
+        12.1398
+      ],
+      "interior_id": "INTERIOR_098"
+    },
+    {
+      "building_id": 99,
+      "root_entity": "BUILDING_099",
+      "bounds_min": [
+        27.8295,
+        -14.7705,
+        0.3
+      ],
+      "bounds_max": [
+        30.7705,
+        -11.8295,
+        11.2391
+      ],
+      "interior_id": "INTERIOR_099"
+    },
+    {
+      "building_id": 100,
+      "root_entity": "BUILDING_100",
+      "bounds_min": [
+        33.2074,
+        -14.7926,
+        0.3
+      ],
+      "bounds_max": [
+        36.1926,
+        -11.8074,
+        11.6371
+      ],
+      "interior_id": "INTERIOR_100"
+    },
+    {
+      "building_id": 101,
+      "root_entity": "BUILDING_101",
+      "bounds_min": [
+        27.8952,
+        -4.1048,
+        0.3
+      ],
+      "bounds_max": [
+        36.1048,
+        4.1048,
+        17.5173
+      ],
+      "interior_id": "INTERIOR_101"
+    },
+    {
+      "building_id": 102,
+      "root_entity": "BUILDING_102",
+      "bounds_min": [
+        27.5015,
+        11.5015,
+        0.3
+      ],
+      "bounds_max": [
+        31.0985,
+        15.0985,
+        14.2236
+      ],
+      "interior_id": "INTERIOR_102"
+    },
+    {
+      "building_id": 103,
+      "root_entity": "BUILDING_103",
+      "bounds_min": [
+        33.1309,
+        11.7309,
+        0.3
+      ],
+      "bounds_max": [
+        36.2691,
+        14.8691,
+        15.3124
+      ],
+      "interior_id": "INTERIOR_103"
+    },
+    {
+      "building_id": 104,
+      "root_entity": "BUILDING_104",
+      "bounds_min": [
+        27.7927,
+        17.1927,
+        0.3
+      ],
+      "bounds_max": [
+        30.8073,
+        20.2073,
+        8.5648
+      ],
+      "interior_id": "INTERIOR_104"
+    },
+    {
+      "building_id": 105,
+      "root_entity": "BUILDING_105",
+      "bounds_min": [
+        33.0881,
+        17.0881,
+        0.3
+      ],
+      "bounds_max": [
+        36.3119,
+        20.3119,
+        9.4806
+      ],
+      "interior_id": "INTERIOR_105"
+    },
+    {
+      "building_id": 106,
+      "root_entity": "BUILDING_106",
+      "bounds_min": [
+        27.446,
+        27.446,
+        0.3
+      ],
+      "bounds_max": [
+        31.154,
+        31.154,
+        7.7308
+      ],
+      "interior_id": "INTERIOR_106"
+    },
+    {
+      "building_id": 107,
+      "root_entity": "BUILDING_107",
+      "bounds_min": [
+        33.0036,
+        27.6036,
+        0.3
+      ],
+      "bounds_max": [
+        36.3964,
+        30.9964,
+        12.8512
+      ],
+      "interior_id": "INTERIOR_107"
+    },
+    {
+      "building_id": 108,
+      "root_entity": "BUILDING_108",
+      "bounds_min": [
+        27.642,
+        33.042,
+        0.3
+      ],
+      "bounds_max": [
+        30.958,
+        36.358,
+        12.1222
+      ],
+      "interior_id": "INTERIOR_108"
+    },
+    {
+      "building_id": 109,
+      "root_entity": "BUILDING_109",
+      "bounds_min": [
+        32.9616,
+        32.9616,
+        0.3
+      ],
+      "bounds_max": [
+        36.4384,
+        36.4384,
+        6.8579
+      ],
+      "interior_id": "INTERIOR_109"
+    },
+    {
+      "building_id": 110,
+      "root_entity": "BUILDING_110",
+      "bounds_min": [
+        27.8935,
+        43.8935,
+        0.3
+      ],
+      "bounds_max": [
+        36.1065,
+        52.1065,
+        6.2219
+      ],
+      "interior_id": "INTERIOR_110"
+    },
+    {
+      "building_id": 111,
+      "root_entity": "BUILDING_111",
+      "bounds_min": [
+        43.8621,
+        -52.1379,
+        0.3
+      ],
+      "bounds_max": [
+        52.1379,
+        -43.8621,
+        8.0288
+      ],
+      "interior_id": "INTERIOR_111"
+    },
+    {
+      "building_id": 112,
+      "root_entity": "BUILDING_112",
+      "bounds_min": [
+        43.5697,
+        -36.4303,
+        0.3
+      ],
+      "bounds_max": [
+        52.4303,
+        -27.5697,
+        7.3419
+      ],
+      "interior_id": "INTERIOR_112"
+    },
+    {
+      "building_id": 113,
+      "root_entity": "BUILDING_113",
+      "bounds_min": [
+        43.3467,
+        -20.4033,
+        0.3
+      ],
+      "bounds_max": [
+        47.0533,
+        -11.5967,
+        12.7993
+      ],
+      "interior_id": "INTERIOR_113"
+    },
+    {
+      "building_id": 114,
+      "root_entity": "BUILDING_114",
+      "bounds_min": [
+        49.0762,
+        -20.3238,
+        0.3
+      ],
+      "bounds_max": [
+        52.5238,
+        -16.8762,
+        10.8994
+      ],
+      "interior_id": "INTERIOR_114"
+    },
+    {
+      "building_id": 115,
+      "root_entity": "BUILDING_115",
+      "bounds_min": [
+        48.9125,
+        -15.2875,
+        0.3
+      ],
+      "bounds_max": [
+        52.6875,
+        -11.5125,
+        10.7602
+      ],
+      "interior_id": "INTERIOR_115"
+    },
+    {
+      "building_id": 116,
+      "root_entity": "BUILDING_116",
+      "bounds_min": [
+        43.6007,
+        -4.3993,
+        0.3
+      ],
+      "bounds_max": [
+        46.9993,
+        -1.0007,
+        11.9044
+      ],
+      "interior_id": "INTERIOR_116"
+    },
+    {
+      "building_id": 117,
+      "root_entity": "BUILDING_117",
+      "bounds_min": [
+        49.1811,
+        -4.2189,
+        0.3
+      ],
+      "bounds_max": [
+        52.2189,
+        -1.1811,
+        9.2343
+      ],
+      "interior_id": "INTERIOR_117"
+    },
+    {
+      "building_id": 118,
+      "root_entity": "BUILDING_118",
+      "bounds_min": [
+        43.6248,
+        1.0248,
+        0.3
+      ],
+      "bounds_max": [
+        46.9752,
+        4.3752,
+        13.5794
+      ],
+      "interior_id": "INTERIOR_118"
+    },
+    {
+      "building_id": 119,
+      "root_entity": "BUILDING_119",
+      "bounds_min": [
+        48.9144,
+        0.9144,
+        0.3
+      ],
+      "bounds_max": [
+        52.4856,
+        4.4856,
+        8.978
+      ],
+      "interior_id": "INTERIOR_119"
+    },
+    {
+      "building_id": 120,
+      "root_entity": "BUILDING_120",
+      "bounds_min": [
+        43.6427,
+        11.8927,
+        0.3
+      ],
+      "bounds_max": [
+        46.7573,
+        20.1073,
+        10.6277
+      ],
+      "interior_id": "INTERIOR_120"
+    },
+    {
+      "building_id": 121,
+      "root_entity": "BUILDING_121",
+      "bounds_min": [
+        49.0437,
+        11.6437,
+        0.3
+      ],
+      "bounds_max": [
+        52.5563,
+        15.1563,
+        6.7696
+      ],
+      "interior_id": "INTERIOR_121"
+    },
+    {
+      "building_id": 122,
+      "root_entity": "BUILDING_122",
+      "bounds_min": [
+        49.1157,
+        16.9157,
+        0.3
+      ],
+      "bounds_max": [
+        52.4843,
+        20.2843,
+        9.4526
+      ],
+      "interior_id": "INTERIOR_122"
+    },
+    {
+      "building_id": 123,
+      "root_entity": "BUILDING_123",
+      "bounds_min": [
+        43.4921,
+        27.7421,
+        0.3
+      ],
+      "bounds_max": [
+        46.9079,
+        36.2579,
+        10.1689
+      ],
+      "interior_id": "INTERIOR_123"
+    },
+    {
+      "building_id": 124,
+      "root_entity": "BUILDING_124",
+      "bounds_min": [
+        49.105,
+        27.705,
+        0.3
+      ],
+      "bounds_max": [
+        52.495,
+        31.095,
+        6.4792
+      ],
+      "interior_id": "INTERIOR_124"
+    },
+    {
+      "building_id": 125,
+      "root_entity": "BUILDING_125",
+      "bounds_min": [
+        48.919,
+        32.719,
+        0.3
+      ],
+      "bounds_max": [
+        52.681,
+        36.481,
+        8.1183
+      ],
+      "interior_id": "INTERIOR_125"
+    },
+    {
+      "building_id": 126,
+      "root_entity": "BUILDING_126",
+      "bounds_min": [
+        43.9186,
+        43.9186,
+        0.3
+      ],
+      "bounds_max": [
+        52.0814,
+        52.0814,
+        6.0503
+      ],
+      "interior_id": "INTERIOR_126"
+    }
+  ],
+  "doors": [
+    {
+      "door_id": 1,
+      "door_entity": "South Facing Door",
+      "trigger_entity": "DOOR_TRIGGER_001",
+      "building_id": 1,
+      "interior_id": "INTERIOR_001",
+      "trigger_center": [
+        -50.7,
+        -53.351,
+        1.05
+      ],
+      "trigger_size": [
+        1.8295,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 2,
+      "door_entity": "South Facing Door.001",
+      "trigger_entity": "DOOR_TRIGGER_002",
+      "building_id": 2,
+      "interior_id": "INTERIOR_002",
+      "trigger_center": [
+        -45.3,
+        -53.0164,
+        1.05
+      ],
+      "trigger_size": [
+        1.6154,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 3,
+      "door_entity": "South Facing Door.002",
+      "trigger_entity": "DOOR_TRIGGER_003",
+      "building_id": 38,
+      "interior_id": "INTERIOR_038",
+      "trigger_center": [
+        -18.7,
+        -53.3151,
+        1.05
+      ],
+      "trigger_size": [
+        1.8065,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 4,
+      "door_entity": "South Facing Door.003",
+      "trigger_entity": "DOOR_TRIGGER_004",
+      "building_id": 39,
+      "interior_id": "INTERIOR_039",
+      "trigger_center": [
+        -13.3,
+        -53.037,
+        1.05
+      ],
+      "trigger_size": [
+        1.6285,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 5,
+      "door_entity": "South Facing Door.004",
+      "trigger_entity": "DOOR_TRIGGER_005",
+      "building_id": 56,
+      "interior_id": "INTERIOR_056",
+      "trigger_center": [
+        2.8,
+        -52.9244,
+        1.05
+      ],
+      "trigger_size": [
+        1.6205,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 6,
+      "door_entity": "South Facing Door.005",
+      "trigger_entity": "DOOR_TRIGGER_006",
+      "building_id": 92,
+      "interior_id": "INTERIOR_092",
+      "trigger_center": [
+        34.8,
+        -53.2464,
+        1.05
+      ],
+      "trigger_size": [
+        1.8266,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 7,
+      "door_entity": "South Facing Door.006",
+      "trigger_entity": "DOOR_TRIGGER_007",
+      "building_id": 19,
+      "interior_id": "INTERIOR_019",
+      "trigger_center": [
+        -32.0,
+        -53.0261,
+        1.05
+      ],
+      "trigger_size": [
+        1.89,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 8,
+      "door_entity": "South Facing Door.007",
+      "trigger_entity": "DOOR_TRIGGER_008",
+      "building_id": 55,
+      "interior_id": "INTERIOR_055",
+      "trigger_center": [
+        -2.8,
+        -53.1432,
+        1.05
+      ],
+      "trigger_size": [
+        1.7925,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 9,
+      "door_entity": "South Facing Door.008",
+      "trigger_entity": "DOOR_TRIGGER_009",
+      "building_id": 72,
+      "interior_id": "INTERIOR_072",
+      "trigger_center": [
+        16.0,
+        -52.9666,
+        1.05
+      ],
+      "trigger_size": [
+        1.89,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 10,
+      "door_entity": "South Facing Door.009",
+      "trigger_entity": "DOOR_TRIGGER_010",
+      "building_id": 91,
+      "interior_id": "INTERIOR_091",
+      "trigger_center": [
+        29.2,
+        -52.9745,
+        1.05
+      ],
+      "trigger_size": [
+        1.6845,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 11,
+      "door_entity": "South Facing Door.010",
+      "trigger_entity": "DOOR_TRIGGER_011",
+      "building_id": 111,
+      "interior_id": "INTERIOR_111",
+      "trigger_center": [
+        48.0,
+        -52.9459,
+        1.05
+      ],
+      "trigger_size": [
+        1.89,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 12,
+      "door_entity": "South Facing Door.011",
+      "trigger_entity": "DOOR_TRIGGER_012",
+      "building_id": 57,
+      "interior_id": "INTERIOR_057",
+      "trigger_center": [
+        2.8,
+        -47.8978,
+        1.05
+      ],
+      "trigger_size": [
+        1.7315,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 13,
+      "door_entity": "South Facing Door.012",
+      "trigger_entity": "DOOR_TRIGGER_013",
+      "building_id": 93,
+      "interior_id": "INTERIOR_093",
+      "trigger_center": [
+        34.8,
+        -47.7526,
+        1.05
+      ],
+      "trigger_size": [
+        1.6386,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 14,
+      "door_entity": "South Facing Door.013",
+      "trigger_entity": "DOOR_TRIGGER_014",
+      "building_id": 3,
+      "interior_id": "INTERIOR_003",
+      "trigger_center": [
+        -50.7,
+        -47.7476,
+        1.05
+      ],
+      "trigger_size": [
+        1.6993,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 15,
+      "door_entity": "South Facing Door.014",
+      "trigger_entity": "DOOR_TRIGGER_015",
+      "building_id": 4,
+      "interior_id": "INTERIOR_004",
+      "trigger_center": [
+        -45.3,
+        -47.5778,
+        1.05
+      ],
+      "trigger_size": [
+        1.5906,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 16,
+      "door_entity": "South Facing Door.015",
+      "trigger_entity": "DOOR_TRIGGER_016",
+      "building_id": 40,
+      "interior_id": "INTERIOR_040",
+      "trigger_center": [
+        -18.7,
+        -47.7056,
+        1.05
+      ],
+      "trigger_size": [
+        1.6724,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 17,
+      "door_entity": "South Facing Door.016",
+      "trigger_entity": "DOOR_TRIGGER_017",
+      "building_id": 41,
+      "interior_id": "INTERIOR_041",
+      "trigger_center": [
+        -13.3,
+        -47.5393,
+        1.05
+      ],
+      "trigger_size": [
+        1.5661,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 18,
+      "door_entity": "South Facing Door.017",
+      "trigger_entity": "DOOR_TRIGGER_018",
+      "building_id": 20,
+      "interior_id": "INTERIOR_020",
+      "trigger_center": [
+        -34.7,
+        -37.3731,
+        1.05
+      ],
+      "trigger_size": [
+        1.8437,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 19,
+      "door_entity": "South Facing Door.018",
+      "trigger_entity": "DOOR_TRIGGER_019",
+      "building_id": 21,
+      "interior_id": "INTERIOR_021",
+      "trigger_center": [
+        -29.3,
+        -37.1453,
+        1.05
+      ],
+      "trigger_size": [
+        1.6979,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 20,
+      "door_entity": "South Facing Door.019",
+      "trigger_entity": "DOOR_TRIGGER_020",
+      "building_id": 43,
+      "interior_id": "INTERIOR_043",
+      "trigger_center": [
+        -13.2,
+        -36.9162,
+        1.05
+      ],
+      "trigger_size": [
+        1.6153,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 21,
+      "door_entity": "South Facing Door.020",
+      "trigger_entity": "DOOR_TRIGGER_021",
+      "building_id": 59,
+      "interior_id": "INTERIOR_059",
+      "trigger_center": [
+        2.8,
+        -37.2996,
+        1.05
+      ],
+      "trigger_size": [
+        1.8606,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 22,
+      "door_entity": "South Facing Door.021",
+      "trigger_entity": "DOOR_TRIGGER_022",
+      "building_id": 95,
+      "interior_id": "INTERIOR_095",
+      "trigger_center": [
+        34.8,
+        -37.2341,
+        1.05
+      ],
+      "trigger_size": [
+        1.8187,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 23,
+      "door_entity": "South Facing Door.022",
+      "trigger_entity": "DOOR_TRIGGER_023",
+      "building_id": 5,
+      "interior_id": "INTERIOR_005",
+      "trigger_center": [
+        -48.0,
+        -37.2089,
+        1.05
+      ],
+      "trigger_size": [
+        1.89,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 24,
+      "door_entity": "South Facing Door.023",
+      "trigger_entity": "DOOR_TRIGGER_024",
+      "building_id": 42,
+      "interior_id": "INTERIOR_042",
+      "trigger_center": [
+        -18.8,
+        -37.239,
+        1.05
+      ],
+      "trigger_size": [
+        1.8538,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 25,
+      "door_entity": "South Facing Door.024",
+      "trigger_entity": "DOOR_TRIGGER_025",
+      "building_id": 58,
+      "interior_id": "INTERIOR_058",
+      "trigger_center": [
+        -2.8,
+        -37.1389,
+        1.05
+      ],
+      "trigger_size": [
+        1.7898,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 26,
+      "door_entity": "South Facing Door.025",
+      "trigger_entity": "DOOR_TRIGGER_026",
+      "building_id": 73,
+      "interior_id": "INTERIOR_073",
+      "trigger_center": [
+        16.0,
+        -36.9934,
+        1.05
+      ],
+      "trigger_size": [
+        1.89,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 27,
+      "door_entity": "South Facing Door.026",
+      "trigger_entity": "DOOR_TRIGGER_027",
+      "building_id": 94,
+      "interior_id": "INTERIOR_094",
+      "trigger_center": [
+        29.2,
+        -37.0496,
+        1.05
+      ],
+      "trigger_size": [
+        1.7327,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 28,
+      "door_entity": "South Facing Door.027",
+      "trigger_entity": "DOOR_TRIGGER_028",
+      "building_id": 112,
+      "interior_id": "INTERIOR_112",
+      "trigger_center": [
+        48.0,
+        -37.2383,
+        1.05
+      ],
+      "trigger_size": [
+        1.89,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 29,
+      "door_entity": "South Facing Door.028",
+      "trigger_entity": "DOOR_TRIGGER_029",
+      "building_id": 44,
+      "interior_id": "INTERIOR_044",
+      "trigger_center": [
+        -13.2,
+        -31.9762,
+        1.05
+      ],
+      "trigger_size": [
+        1.7816,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 30,
+      "door_entity": "South Facing Door.029",
+      "trigger_entity": "DOOR_TRIGGER_030",
+      "building_id": 60,
+      "interior_id": "INTERIOR_060",
+      "trigger_center": [
+        2.8,
+        -32.0968,
+        1.05
+      ],
+      "trigger_size": [
+        1.8588,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 31,
+      "door_entity": "South Facing Door.030",
+      "trigger_entity": "DOOR_TRIGGER_031",
+      "building_id": 96,
+      "interior_id": "INTERIOR_096",
+      "trigger_center": [
+        34.8,
+        -32.0726,
+        1.05
+      ],
+      "trigger_size": [
+        1.8434,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 32,
+      "door_entity": "South Facing Door.031",
+      "trigger_entity": "DOOR_TRIGGER_032",
+      "building_id": 22,
+      "interior_id": "INTERIOR_022",
+      "trigger_center": [
+        -34.7,
+        -31.673,
+        1.05
+      ],
+      "trigger_size": [
+        1.6516,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 33,
+      "door_entity": "South Facing Door.032",
+      "trigger_entity": "DOOR_TRIGGER_033",
+      "building_id": 23,
+      "interior_id": "INTERIOR_023",
+      "trigger_center": [
+        -29.3,
+        -31.9184,
+        1.05
+      ],
+      "trigger_size": [
+        1.8087,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 34,
+      "door_entity": "South Facing Door.033",
+      "trigger_entity": "DOOR_TRIGGER_034",
+      "building_id": 6,
+      "interior_id": "INTERIOR_006",
+      "trigger_center": [
+        -50.7,
+        -21.0796,
+        1.05
+      ],
+      "trigger_size": [
+        1.6558,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 35,
+      "door_entity": "South Facing Door.034",
+      "trigger_entity": "DOOR_TRIGGER_035",
+      "building_id": 7,
+      "interior_id": "INTERIOR_007",
+      "trigger_center": [
+        -45.3,
+        -21.1095,
+        1.05
+      ],
+      "trigger_size": [
+        1.6749,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 36,
+      "door_entity": "South Facing Door.035",
+      "trigger_entity": "DOOR_TRIGGER_036",
+      "building_id": 24,
+      "interior_id": "INTERIOR_024",
+      "trigger_center": [
+        -34.7,
+        -21.1142,
+        1.05
+      ],
+      "trigger_size": [
+        1.678,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 37,
+      "door_entity": "South Facing Door.036",
+      "trigger_entity": "DOOR_TRIGGER_037",
+      "building_id": 25,
+      "interior_id": "INTERIOR_025",
+      "trigger_center": [
+        -29.3,
+        -21.3001,
+        1.05
+      ],
+      "trigger_size": [
+        1.797,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 38,
+      "door_entity": "South Facing Door.037",
+      "trigger_entity": "DOOR_TRIGGER_038",
+      "building_id": 61,
+      "interior_id": "INTERIOR_061",
+      "trigger_center": [
+        -2.7,
+        -21.0975,
+        1.05
+      ],
+      "trigger_size": [
+        1.6673,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 39,
+      "door_entity": "South Facing Door.038",
+      "trigger_entity": "DOOR_TRIGGER_039",
+      "building_id": 62,
+      "interior_id": "INTERIOR_062",
+      "trigger_center": [
+        2.7,
+        -21.0857,
+        1.05
+      ],
+      "trigger_size": [
+        1.6598,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 40,
+      "door_entity": "South Facing Door.039",
+      "trigger_entity": "DOOR_TRIGGER_040",
+      "building_id": 74,
+      "interior_id": "INTERIOR_074",
+      "trigger_center": [
+        13.3,
+        -21.2279,
+        1.05
+      ],
+      "trigger_size": [
+        1.7507,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 41,
+      "door_entity": "South Facing Door.040",
+      "trigger_entity": "DOOR_TRIGGER_041",
+      "building_id": 75,
+      "interior_id": "INTERIOR_075",
+      "trigger_center": [
+        18.7,
+        -21.2507,
+        1.05
+      ],
+      "trigger_size": [
+        1.7654,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 42,
+      "door_entity": "South Facing Door.041",
+      "trigger_entity": "DOOR_TRIGGER_042",
+      "building_id": 97,
+      "interior_id": "INTERIOR_097",
+      "trigger_center": [
+        29.3,
+        -21.0469,
+        1.05
+      ],
+      "trigger_size": [
+        1.6349,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 43,
+      "door_entity": "South Facing Door.042",
+      "trigger_entity": "DOOR_TRIGGER_043",
+      "building_id": 98,
+      "interior_id": "INTERIOR_098",
+      "trigger_center": [
+        34.7,
+        -21.3363,
+        1.05
+      ],
+      "trigger_size": [
+        1.8201,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 44,
+      "door_entity": "South Facing Door.043",
+      "trigger_entity": "DOOR_TRIGGER_044",
+      "building_id": 114,
+      "interior_id": "INTERIOR_114",
+      "trigger_center": [
+        50.8,
+        -21.1318,
+        1.05
+      ],
+      "trigger_size": [
+        1.7533,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 45,
+      "door_entity": "South Facing Door.044",
+      "trigger_entity": "DOOR_TRIGGER_045",
+      "building_id": 45,
+      "interior_id": "INTERIOR_045",
+      "trigger_center": [
+        -16.0,
+        -21.0054,
+        1.05
+      ],
+      "trigger_size": [
+        1.89,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 46,
+      "door_entity": "South Facing Door.045",
+      "trigger_entity": "DOOR_TRIGGER_046",
+      "building_id": 113,
+      "interior_id": "INTERIOR_113",
+      "trigger_center": [
+        45.2,
+        -21.2113,
+        1.05
+      ],
+      "trigger_size": [
+        1.8361,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 47,
+      "door_entity": "South Facing Door.046",
+      "trigger_entity": "DOOR_TRIGGER_047",
+      "building_id": 115,
+      "interior_id": "INTERIOR_115",
+      "trigger_center": [
+        50.8,
+        -16.0955,
+        1.05
+      ],
+      "trigger_size": [
+        1.858,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 48,
+      "door_entity": "South Facing Door.047",
+      "trigger_entity": "DOOR_TRIGGER_048",
+      "building_id": 8,
+      "interior_id": "INTERIOR_008",
+      "trigger_center": [
+        -50.7,
+        -15.7973,
+        1.05
+      ],
+      "trigger_size": [
+        1.7312,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 49,
+      "door_entity": "South Facing Door.048",
+      "trigger_entity": "DOOR_TRIGGER_049",
+      "building_id": 9,
+      "interior_id": "INTERIOR_009",
+      "trigger_center": [
+        -45.3,
+        -15.6861,
+        1.05
+      ],
+      "trigger_size": [
+        1.66,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 50,
+      "door_entity": "South Facing Door.049",
+      "trigger_entity": "DOOR_TRIGGER_050",
+      "building_id": 26,
+      "interior_id": "INTERIOR_026",
+      "trigger_center": [
+        -34.7,
+        -15.9273,
+        1.05
+      ],
+      "trigger_size": [
+        1.8143,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 51,
+      "door_entity": "South Facing Door.050",
+      "trigger_entity": "DOOR_TRIGGER_051",
+      "building_id": 27,
+      "interior_id": "INTERIOR_027",
+      "trigger_center": [
+        -29.3,
+        -15.5552,
+        1.05
+      ],
+      "trigger_size": [
+        1.5762,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 52,
+      "door_entity": "South Facing Door.051",
+      "trigger_entity": "DOOR_TRIGGER_052",
+      "building_id": 63,
+      "interior_id": "INTERIOR_063",
+      "trigger_center": [
+        -2.7,
+        -15.8926,
+        1.05
+      ],
+      "trigger_size": [
+        1.7921,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 53,
+      "door_entity": "South Facing Door.052",
+      "trigger_entity": "DOOR_TRIGGER_053",
+      "building_id": 64,
+      "interior_id": "INTERIOR_064",
+      "trigger_center": [
+        2.7,
+        -15.6146,
+        1.05
+      ],
+      "trigger_size": [
+        1.6142,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 54,
+      "door_entity": "South Facing Door.053",
+      "trigger_entity": "DOOR_TRIGGER_054",
+      "building_id": 76,
+      "interior_id": "INTERIOR_076",
+      "trigger_center": [
+        13.3,
+        -15.5709,
+        1.05
+      ],
+      "trigger_size": [
+        1.5862,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 55,
+      "door_entity": "South Facing Door.054",
+      "trigger_entity": "DOOR_TRIGGER_055",
+      "building_id": 77,
+      "interior_id": "INTERIOR_077",
+      "trigger_center": [
+        18.7,
+        -15.6579,
+        1.05
+      ],
+      "trigger_size": [
+        1.642,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 56,
+      "door_entity": "South Facing Door.055",
+      "trigger_entity": "DOOR_TRIGGER_056",
+      "building_id": 99,
+      "interior_id": "INTERIOR_099",
+      "trigger_center": [
+        29.3,
+        -15.5785,
+        1.05
+      ],
+      "trigger_size": [
+        1.5911,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 57,
+      "door_entity": "South Facing Door.056",
+      "trigger_entity": "DOOR_TRIGGER_057",
+      "building_id": 100,
+      "interior_id": "INTERIOR_100",
+      "trigger_center": [
+        34.7,
+        -15.6006,
+        1.05
+      ],
+      "trigger_size": [
+        1.6053,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 58,
+      "door_entity": "South Facing Door.057",
+      "trigger_entity": "DOOR_TRIGGER_058",
+      "building_id": 28,
+      "interior_id": "INTERIOR_028",
+      "trigger_center": [
+        -34.7,
+        -5.1185,
+        1.05
+      ],
+      "trigger_size": [
+        1.6807,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 59,
+      "door_entity": "South Facing Door.058",
+      "trigger_entity": "DOOR_TRIGGER_059",
+      "building_id": 29,
+      "interior_id": "INTERIOR_029",
+      "trigger_center": [
+        -29.3,
+        -5.0668,
+        1.05
+      ],
+      "trigger_size": [
+        1.6477,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 60,
+      "door_entity": "South Facing Door.059",
+      "trigger_entity": "DOOR_TRIGGER_060",
+      "building_id": 116,
+      "interior_id": "INTERIOR_116",
+      "trigger_center": [
+        45.3,
+        -5.2073,
+        1.05
+      ],
+      "trigger_size": [
+        1.7376,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 61,
+      "door_entity": "South Facing Door.060",
+      "trigger_entity": "DOOR_TRIGGER_061",
+      "building_id": 117,
+      "interior_id": "INTERIOR_117",
+      "trigger_center": [
+        50.7,
+        -5.0269,
+        1.05
+      ],
+      "trigger_size": [
+        1.6221,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 62,
+      "door_entity": "South Facing Door.061",
+      "trigger_entity": "DOOR_TRIGGER_062",
+      "building_id": 11,
+      "interior_id": "INTERIOR_011",
+      "trigger_center": [
+        -45.2,
+        -4.9827,
+        1.05
+      ],
+      "trigger_size": [
+        1.6578,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 63,
+      "door_entity": "South Facing Door.062",
+      "trigger_entity": "DOOR_TRIGGER_063",
+      "building_id": 47,
+      "interior_id": "INTERIOR_047",
+      "trigger_center": [
+        -13.2,
+        -5.3027,
+        1.05
+      ],
+      "trigger_size": [
+        1.8626,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 64,
+      "door_entity": "South Facing Door.063",
+      "trigger_entity": "DOOR_TRIGGER_064",
+      "building_id": 10,
+      "interior_id": "INTERIOR_010",
+      "trigger_center": [
+        -50.8,
+        -5.1924,
+        1.05
+      ],
+      "trigger_size": [
+        1.824,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 65,
+      "door_entity": "South Facing Door.064",
+      "trigger_entity": "DOOR_TRIGGER_065",
+      "building_id": 46,
+      "interior_id": "INTERIOR_046",
+      "trigger_center": [
+        -18.8,
+        -5.1705,
+        1.05
+      ],
+      "trigger_size": [
+        1.81,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 66,
+      "door_entity": "South Facing Door.065",
+      "trigger_entity": "DOOR_TRIGGER_066",
+      "building_id": 65,
+      "interior_id": "INTERIOR_065",
+      "trigger_center": [
+        0.0,
+        -5.067,
+        1.05
+      ],
+      "trigger_size": [
+        1.89,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 67,
+      "door_entity": "South Facing Door.066",
+      "trigger_entity": "DOOR_TRIGGER_067",
+      "building_id": 78,
+      "interior_id": "INTERIOR_078",
+      "trigger_center": [
+        16.0,
+        -4.158,
+        1.05
+      ],
+      "trigger_size": [
+        1.89,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 68,
+      "door_entity": "South Facing Door.067",
+      "trigger_entity": "DOOR_TRIGGER_068",
+      "building_id": 101,
+      "interior_id": "INTERIOR_101",
+      "trigger_center": [
+        32.0,
+        -4.9128,
+        1.05
+      ],
+      "trigger_size": [
+        1.89,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 69,
+      "door_entity": "South Facing Door.068",
+      "trigger_entity": "DOOR_TRIGGER_069",
+      "building_id": 12,
+      "interior_id": "INTERIOR_012",
+      "trigger_center": [
+        -45.2,
+        0.2374,
+        1.05
+      ],
+      "trigger_size": [
+        1.645,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 70,
+      "door_entity": "South Facing Door.069",
+      "trigger_entity": "DOOR_TRIGGER_070",
+      "building_id": 48,
+      "interior_id": "INTERIOR_048",
+      "trigger_center": [
+        -13.2,
+        -0.1163,
+        1.05
+      ],
+      "trigger_size": [
+        1.8713,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 71,
+      "door_entity": "South Facing Door.070",
+      "trigger_entity": "DOOR_TRIGGER_071",
+      "building_id": 30,
+      "interior_id": "INTERIOR_030",
+      "trigger_center": [
+        -34.7,
+        0.1098,
+        1.05
+      ],
+      "trigger_size": [
+        1.7906,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 72,
+      "door_entity": "South Facing Door.071",
+      "trigger_entity": "DOOR_TRIGGER_072",
+      "building_id": 31,
+      "interior_id": "INTERIOR_031",
+      "trigger_center": [
+        -29.3,
+        0.2075,
+        1.05
+      ],
+      "trigger_size": [
+        1.7281,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 73,
+      "door_entity": "South Facing Door.072",
+      "trigger_entity": "DOOR_TRIGGER_073",
+      "building_id": 118,
+      "interior_id": "INTERIOR_118",
+      "trigger_center": [
+        45.3,
+        0.2168,
+        1.05
+      ],
+      "trigger_size": [
+        1.7221,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 74,
+      "door_entity": "South Facing Door.073",
+      "trigger_entity": "DOOR_TRIGGER_074",
+      "building_id": 119,
+      "interior_id": "INTERIOR_119",
+      "trigger_center": [
+        50.7,
+        0.1064,
+        1.05
+      ],
+      "trigger_size": [
+        1.7928,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 75,
+      "door_entity": "South Facing Door.074",
+      "trigger_entity": "DOOR_TRIGGER_075",
+      "building_id": 13,
+      "interior_id": "INTERIOR_013",
+      "trigger_center": [
+        -50.7,
+        10.7593,
+        1.05
+      ],
+      "trigger_size": [
+        1.7589,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 76,
+      "door_entity": "South Facing Door.075",
+      "trigger_entity": "DOOR_TRIGGER_076",
+      "building_id": 14,
+      "interior_id": "INTERIOR_014",
+      "trigger_center": [
+        -45.3,
+        10.7339,
+        1.05
+      ],
+      "trigger_size": [
+        1.7752,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 77,
+      "door_entity": "South Facing Door.076",
+      "trigger_entity": "DOOR_TRIGGER_077",
+      "building_id": 66,
+      "interior_id": "INTERIOR_066",
+      "trigger_center": [
+        -2.7,
+        10.6749,
+        1.05
+      ],
+      "trigger_size": [
+        1.8129,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 78,
+      "door_entity": "South Facing Door.077",
+      "trigger_entity": "DOOR_TRIGGER_078",
+      "building_id": 67,
+      "interior_id": "INTERIOR_067",
+      "trigger_center": [
+        2.7,
+        10.8416,
+        1.05
+      ],
+      "trigger_size": [
+        1.7063,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 79,
+      "door_entity": "South Facing Door.078",
+      "trigger_entity": "DOOR_TRIGGER_079",
+      "building_id": 79,
+      "interior_id": "INTERIOR_079",
+      "trigger_center": [
+        13.3,
+        10.6616,
+        1.05
+      ],
+      "trigger_size": [
+        1.8214,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 80,
+      "door_entity": "South Facing Door.079",
+      "trigger_entity": "DOOR_TRIGGER_080",
+      "building_id": 80,
+      "interior_id": "INTERIOR_080",
+      "trigger_center": [
+        18.7,
+        10.9918,
+        1.05
+      ],
+      "trigger_size": [
+        1.6101,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 81,
+      "door_entity": "South Facing Door.080",
+      "trigger_entity": "DOOR_TRIGGER_081",
+      "building_id": 102,
+      "interior_id": "INTERIOR_102",
+      "trigger_center": [
+        29.3,
+        10.6935,
+        1.05
+      ],
+      "trigger_size": [
+        1.8011,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 82,
+      "door_entity": "South Facing Door.081",
+      "trigger_entity": "DOOR_TRIGGER_082",
+      "building_id": 103,
+      "interior_id": "INTERIOR_103",
+      "trigger_center": [
+        34.7,
+        10.9229,
+        1.05
+      ],
+      "trigger_size": [
+        1.6542,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 83,
+      "door_entity": "South Facing Door.082",
+      "trigger_entity": "DOOR_TRIGGER_083",
+      "building_id": 33,
+      "interior_id": "INTERIOR_033",
+      "trigger_center": [
+        -29.2,
+        10.7075,
+        1.05
+      ],
+      "trigger_size": [
+        1.8561,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 84,
+      "door_entity": "South Facing Door.083",
+      "trigger_entity": "DOOR_TRIGGER_084",
+      "building_id": 121,
+      "interior_id": "INTERIOR_121",
+      "trigger_center": [
+        50.8,
+        10.8357,
+        1.05
+      ],
+      "trigger_size": [
+        1.774,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 85,
+      "door_entity": "South Facing Door.084",
+      "trigger_entity": "DOOR_TRIGGER_085",
+      "building_id": 32,
+      "interior_id": "INTERIOR_032",
+      "trigger_center": [
+        -34.8,
+        10.8335,
+        1.05
+      ],
+      "trigger_size": [
+        1.8074,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 86,
+      "door_entity": "South Facing Door.085",
+      "trigger_entity": "DOOR_TRIGGER_086",
+      "building_id": 49,
+      "interior_id": "INTERIOR_049",
+      "trigger_center": [
+        -16.0,
+        11.0502,
+        1.05
+      ],
+      "trigger_size": [
+        1.89,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 87,
+      "door_entity": "South Facing Door.086",
+      "trigger_entity": "DOOR_TRIGGER_087",
+      "building_id": 120,
+      "interior_id": "INTERIOR_120",
+      "trigger_center": [
+        45.2,
+        11.0847,
+        1.05
+      ],
+      "trigger_size": [
+        1.6467,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 88,
+      "door_entity": "South Facing Door.087",
+      "trigger_entity": "DOOR_TRIGGER_088",
+      "building_id": 34,
+      "interior_id": "INTERIOR_034",
+      "trigger_center": [
+        -29.2,
+        15.9094,
+        1.05
+      ],
+      "trigger_size": [
+        1.8549,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 89,
+      "door_entity": "South Facing Door.088",
+      "trigger_entity": "DOOR_TRIGGER_089",
+      "building_id": 122,
+      "interior_id": "INTERIOR_122",
+      "trigger_center": [
+        50.8,
+        16.1077,
+        1.05
+      ],
+      "trigger_size": [
+        1.7279,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 90,
+      "door_entity": "South Facing Door.089",
+      "trigger_entity": "DOOR_TRIGGER_090",
+      "building_id": 15,
+      "interior_id": "INTERIOR_015",
+      "trigger_center": [
+        -50.7,
+        16.3553,
+        1.05
+      ],
+      "trigger_size": [
+        1.6335,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 91,
+      "door_entity": "South Facing Door.090",
+      "trigger_entity": "DOOR_TRIGGER_091",
+      "building_id": 16,
+      "interior_id": "INTERIOR_016",
+      "trigger_center": [
+        -45.3,
+        16.3619,
+        1.05
+      ],
+      "trigger_size": [
+        1.6293,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 92,
+      "door_entity": "South Facing Door.091",
+      "trigger_entity": "DOOR_TRIGGER_092",
+      "building_id": 68,
+      "interior_id": "INTERIOR_068",
+      "trigger_center": [
+        -2.7,
+        16.0302,
+        1.05
+      ],
+      "trigger_size": [
+        1.8416,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 93,
+      "door_entity": "South Facing Door.092",
+      "trigger_entity": "DOOR_TRIGGER_093",
+      "building_id": 69,
+      "interior_id": "INTERIOR_069",
+      "trigger_center": [
+        2.7,
+        16.1618,
+        1.05
+      ],
+      "trigger_size": [
+        1.7573,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 94,
+      "door_entity": "South Facing Door.093",
+      "trigger_entity": "DOOR_TRIGGER_094",
+      "building_id": 81,
+      "interior_id": "INTERIOR_081",
+      "trigger_center": [
+        13.3,
+        16.1375,
+        1.05
+      ],
+      "trigger_size": [
+        1.7729,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 95,
+      "door_entity": "South Facing Door.094",
+      "trigger_entity": "DOOR_TRIGGER_095",
+      "building_id": 82,
+      "interior_id": "INTERIOR_082",
+      "trigger_center": [
+        18.7,
+        16.4191,
+        1.05
+      ],
+      "trigger_size": [
+        1.5927,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 96,
+      "door_entity": "South Facing Door.095",
+      "trigger_entity": "DOOR_TRIGGER_096",
+      "building_id": 104,
+      "interior_id": "INTERIOR_104",
+      "trigger_center": [
+        29.3,
+        16.3847,
+        1.05
+      ],
+      "trigger_size": [
+        1.6147,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 97,
+      "door_entity": "South Facing Door.096",
+      "trigger_entity": "DOOR_TRIGGER_097",
+      "building_id": 105,
+      "interior_id": "INTERIOR_105",
+      "trigger_center": [
+        34.7,
+        16.2801,
+        1.05
+      ],
+      "trigger_size": [
+        1.6816,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 98,
+      "door_entity": "South Facing Door.097",
+      "trigger_entity": "DOOR_TRIGGER_098",
+      "building_id": 83,
+      "interior_id": "INTERIOR_083",
+      "trigger_center": [
+        13.3,
+        26.9447,
+        1.05
+      ],
+      "trigger_size": [
+        1.6403,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 99,
+      "door_entity": "South Facing Door.098",
+      "trigger_entity": "DOOR_TRIGGER_099",
+      "building_id": 84,
+      "interior_id": "INTERIOR_084",
+      "trigger_center": [
+        18.7,
+        26.9736,
+        1.05
+      ],
+      "trigger_size": [
+        1.6218,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 100,
+      "door_entity": "South Facing Door.099",
+      "trigger_entity": "DOOR_TRIGGER_100",
+      "building_id": 106,
+      "interior_id": "INTERIOR_106",
+      "trigger_center": [
+        29.3,
+        26.638,
+        1.05
+      ],
+      "trigger_size": [
+        1.8366,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 101,
+      "door_entity": "South Facing Door.100",
+      "trigger_entity": "DOOR_TRIGGER_101",
+      "building_id": 107,
+      "interior_id": "INTERIOR_107",
+      "trigger_center": [
+        34.7,
+        26.7956,
+        1.05
+      ],
+      "trigger_size": [
+        1.7357,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 102,
+      "door_entity": "South Facing Door.101",
+      "trigger_entity": "DOOR_TRIGGER_102",
+      "building_id": 124,
+      "interior_id": "INTERIOR_124",
+      "trigger_center": [
+        50.8,
+        26.897,
+        1.05
+      ],
+      "trigger_size": [
+        1.7348,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 103,
+      "door_entity": "South Facing Door.102",
+      "trigger_entity": "DOOR_TRIGGER_103",
+      "building_id": 17,
+      "interior_id": "INTERIOR_017",
+      "trigger_center": [
+        -48.0,
+        26.8486,
+        1.05
+      ],
+      "trigger_size": [
+        1.89,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 104,
+      "door_entity": "South Facing Door.103",
+      "trigger_entity": "DOOR_TRIGGER_104",
+      "building_id": 50,
+      "interior_id": "INTERIOR_050",
+      "trigger_center": [
+        -16.0,
+        26.8861,
+        1.05
+      ],
+      "trigger_size": [
+        1.89,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 105,
+      "door_entity": "South Facing Door.104",
+      "trigger_entity": "DOOR_TRIGGER_105",
+      "building_id": 70,
+      "interior_id": "INTERIOR_070",
+      "trigger_center": [
+        0.0,
+        27.1092,
+        1.05
+      ],
+      "trigger_size": [
+        1.89,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 106,
+      "door_entity": "South Facing Door.105",
+      "trigger_entity": "DOOR_TRIGGER_106",
+      "building_id": 123,
+      "interior_id": "INTERIOR_123",
+      "trigger_center": [
+        45.2,
+        26.9341,
+        1.05
+      ],
+      "trigger_size": [
+        1.743,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 107,
+      "door_entity": "South Facing Door.106",
+      "trigger_entity": "DOOR_TRIGGER_107",
+      "building_id": 125,
+      "interior_id": "INTERIOR_125",
+      "trigger_center": [
+        50.8,
+        31.911,
+        1.05
+      ],
+      "trigger_size": [
+        1.8538,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 108,
+      "door_entity": "South Facing Door.107",
+      "trigger_entity": "DOOR_TRIGGER_108",
+      "building_id": 85,
+      "interior_id": "INTERIOR_085",
+      "trigger_center": [
+        13.3,
+        32.1616,
+        1.05
+      ],
+      "trigger_size": [
+        1.7574,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 109,
+      "door_entity": "South Facing Door.108",
+      "trigger_entity": "DOOR_TRIGGER_109",
+      "building_id": 86,
+      "interior_id": "INTERIOR_086",
+      "trigger_center": [
+        18.7,
+        32.2643,
+        1.05
+      ],
+      "trigger_size": [
+        1.6917,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 110,
+      "door_entity": "South Facing Door.109",
+      "trigger_entity": "DOOR_TRIGGER_110",
+      "building_id": 108,
+      "interior_id": "INTERIOR_108",
+      "trigger_center": [
+        29.3,
+        32.234,
+        1.05
+      ],
+      "trigger_size": [
+        1.7111,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 111,
+      "door_entity": "South Facing Door.110",
+      "trigger_entity": "DOOR_TRIGGER_111",
+      "building_id": 109,
+      "interior_id": "INTERIOR_109",
+      "trigger_center": [
+        34.7,
+        32.1536,
+        1.05
+      ],
+      "trigger_size": [
+        1.7626,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 112,
+      "door_entity": "South Facing Door.111",
+      "trigger_entity": "DOOR_TRIGGER_112",
+      "building_id": 51,
+      "interior_id": "INTERIOR_051",
+      "trigger_center": [
+        -18.7,
+        42.7281,
+        1.05
+      ],
+      "trigger_size": [
+        1.7789,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 113,
+      "door_entity": "South Facing Door.112",
+      "trigger_entity": "DOOR_TRIGGER_113",
+      "building_id": 52,
+      "interior_id": "INTERIOR_052",
+      "trigger_center": [
+        -13.3,
+        42.6913,
+        1.05
+      ],
+      "trigger_size": [
+        1.8025,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 114,
+      "door_entity": "South Facing Door.113",
+      "trigger_entity": "DOOR_TRIGGER_114",
+      "building_id": 87,
+      "interior_id": "INTERIOR_087",
+      "trigger_center": [
+        13.3,
+        42.9443,
+        1.05
+      ],
+      "trigger_size": [
+        1.6405,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 115,
+      "door_entity": "South Facing Door.114",
+      "trigger_entity": "DOOR_TRIGGER_115",
+      "building_id": 88,
+      "interior_id": "INTERIOR_088",
+      "trigger_center": [
+        18.7,
+        42.9356,
+        1.05
+      ],
+      "trigger_size": [
+        1.6461,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 116,
+      "door_entity": "South Facing Door.115",
+      "trigger_entity": "DOOR_TRIGGER_116",
+      "building_id": 36,
+      "interior_id": "INTERIOR_036",
+      "trigger_center": [
+        -29.2,
+        42.6769,
+        1.05
+      ],
+      "trigger_size": [
+        1.8757,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 117,
+      "door_entity": "South Facing Door.116",
+      "trigger_entity": "DOOR_TRIGGER_117",
+      "building_id": 18,
+      "interior_id": "INTERIOR_018",
+      "trigger_center": [
+        -48.0,
+        43.0728,
+        1.05
+      ],
+      "trigger_size": [
+        1.89,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 118,
+      "door_entity": "South Facing Door.117",
+      "trigger_entity": "DOOR_TRIGGER_118",
+      "building_id": 35,
+      "interior_id": "INTERIOR_035",
+      "trigger_center": [
+        -34.8,
+        42.9724,
+        1.05
+      ],
+      "trigger_size": [
+        1.7185,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 119,
+      "door_entity": "South Facing Door.118",
+      "trigger_entity": "DOOR_TRIGGER_119",
+      "building_id": 71,
+      "interior_id": "INTERIOR_071",
+      "trigger_center": [
+        0.0,
+        42.918,
+        1.05
+      ],
+      "trigger_size": [
+        1.89,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 120,
+      "door_entity": "South Facing Door.119",
+      "trigger_entity": "DOOR_TRIGGER_120",
+      "building_id": 110,
+      "interior_id": "INTERIOR_110",
+      "trigger_center": [
+        32.0,
+        43.0855,
+        1.05
+      ],
+      "trigger_size": [
+        1.89,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 121,
+      "door_entity": "South Facing Door.120",
+      "trigger_entity": "DOOR_TRIGGER_121",
+      "building_id": 126,
+      "interior_id": "INTERIOR_126",
+      "trigger_center": [
+        48.0,
+        43.1106,
+        1.05
+      ],
+      "trigger_size": [
+        1.89,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 122,
+      "door_entity": "South Facing Door.121",
+      "trigger_entity": "DOOR_TRIGGER_122",
+      "building_id": 37,
+      "interior_id": "INTERIOR_037",
+      "trigger_center": [
+        -29.2,
+        48.1553,
+        1.05
+      ],
+      "trigger_size": [
+        1.6975,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 123,
+      "door_entity": "South Facing Door.122",
+      "trigger_entity": "DOOR_TRIGGER_123",
+      "building_id": 53,
+      "interior_id": "INTERIOR_053",
+      "trigger_center": [
+        -18.7,
+        48.272,
+        1.05
+      ],
+      "trigger_size": [
+        1.6868,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 124,
+      "door_entity": "South Facing Door.123",
+      "trigger_entity": "DOOR_TRIGGER_124",
+      "building_id": 54,
+      "interior_id": "INTERIOR_054",
+      "trigger_center": [
+        -13.3,
+        48.2931,
+        1.05
+      ],
+      "trigger_size": [
+        1.6733,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 125,
+      "door_entity": "South Facing Door.124",
+      "trigger_entity": "DOOR_TRIGGER_125",
+      "building_id": 89,
+      "interior_id": "INTERIOR_089",
+      "trigger_center": [
+        13.3,
+        48.3519,
+        1.05
+      ],
+      "trigger_size": [
+        1.6357,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    },
+    {
+      "door_id": 126,
+      "door_entity": "South Facing Door.125",
+      "trigger_entity": "DOOR_TRIGGER_126",
+      "building_id": 90,
+      "interior_id": "INTERIOR_090",
+      "trigger_center": [
+        18.7,
+        48.4012,
+        1.05
+      ],
+      "trigger_size": [
+        1.6041,
+        1.25,
+        2.1
+      ],
+      "active_material": "Door \u2022 Active Black"
+    }
+  ]
+}
