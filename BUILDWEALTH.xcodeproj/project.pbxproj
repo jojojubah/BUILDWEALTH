@@ -22,6 +22,8 @@
 		A10000000000000000000013 /* FloatingCliffCity.traffic.json in Resources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000014 /* FloatingCliffCity.traffic.json */; };
 		A10000000000000000000014 /* LaunchSequenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000015 /* LaunchSequenceView.swift */; };
 		A10000000000000000000015 /* Branding.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000016 /* Branding.xcassets */; };
+		A10000000000000000000016 /* InteriorRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000017 /* InteriorRoomView.swift */; };
+		A10000000000000000000017 /* ReusableInteriorRoom.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000018 /* ReusableInteriorRoom.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		A20000000000000000000014 /* FloatingCliffCity.traffic.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FloatingCliffCity.traffic.json; sourceTree = "<group>"; };
 		A20000000000000000000015 /* LaunchSequenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchSequenceView.swift; sourceTree = "<group>"; };
 		A20000000000000000000016 /* Branding.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Branding.xcassets; sourceTree = "<group>"; };
+		A20000000000000000000017 /* InteriorRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteriorRoomView.swift; sourceTree = "<group>"; };
+		A20000000000000000000018 /* ReusableInteriorRoom.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = ReusableInteriorRoom.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,7 @@
 				A20000000000000000000002 /* ContentView.swift */,
 				A20000000000000000000015 /* LaunchSequenceView.swift */,
 				A20000000000000000000012 /* InteriorView.swift */,
+				A20000000000000000000017 /* InteriorRoomView.swift */,
 				A40000000000000000000003 /* Game */,
 			);
 			path = BUILDWEALTH;
@@ -93,6 +98,7 @@
 				A40000000000000000000005 /* City */,
 				A40000000000000000000007 /* Characters */,
 				A40000000000000000000008 /* Branding */,
+				A40000000000000000000009 /* Interiors */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -130,6 +136,14 @@
 				A20000000000000000000016 /* Branding.xcassets */,
 			);
 			path = Branding;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000009 /* Interiors */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000018 /* ReusableInteriorRoom.usdz */,
+			);
+			path = Interiors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +211,7 @@
 				A10000000000000000000012 /* FloatingCliffCity.interactions.json in Resources */,
 				A10000000000000000000013 /* FloatingCliffCity.traffic.json in Resources */,
 				A10000000000000000000015 /* Branding.xcassets in Resources */,
+				A10000000000000000000017 /* ReusableInteriorRoom.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +231,7 @@
 				A10000000000000000000010 /* TrafficController.swift in Sources */,
 				A10000000000000000000011 /* InteriorView.swift in Sources */,
 				A10000000000000000000014 /* LaunchSequenceView.swift in Sources */,
+				A10000000000000000000016 /* InteriorRoomView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

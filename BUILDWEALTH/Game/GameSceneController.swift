@@ -31,7 +31,7 @@ final class GameSceneController: NSObject, ObservableObject, SCNSceneRendererDel
     // Looking from the south-east makes the north-west park sit high in frame,
     // while the city façades read down and left.
     private let cameraOffset = SIMD3<Float>(15.2, 29.45, 26.6)
-    private let walkSpeed: Float = 8
+    private let walkSpeed: Float = 6.8
     private let playerRadius: Float = 0.42
 
     override init() {
@@ -170,10 +170,14 @@ final class GameSceneController: NSObject, ObservableObject, SCNSceneRendererDel
                 label = "HOME"
             case "INTERIOR_017":
                 label = "BURGER SHOP"
+            case "INTERIOR_071":
+                label = "BANK"
+            case "INTERIOR_050":
+                label = "SCHOOL"
             default:
                 label = building.interiorID.replacingOccurrences(of: "_", with: " ")
             }
-            let plane = SCNPlane(width: 2.4, height: 0.6)
+            let plane = SCNPlane(width: 3.6, height: 0.9)
             let material = SCNMaterial()
             material.lightingModel = .constant
             material.diffuse.contents = makeBuildingLabelTexture(
@@ -188,7 +192,7 @@ final class GameSceneController: NSObject, ObservableObject, SCNSceneRendererDel
             node.name = "LABEL_\(building.interiorID)"
             node.simdPosition = SIMD3<Float>(
                 (bounds.minX + bounds.maxX) * 0.5,
-                bounds.height + 1.15,
+                bounds.height + 1.4,
                 (bounds.minZ + bounds.maxZ) * 0.5
             )
             let billboard = SCNBillboardConstraint()
@@ -205,7 +209,7 @@ final class GameSceneController: NSObject, ObservableObject, SCNSceneRendererDel
         MainActor.assumeIsolated {
             let renderer = ImageRenderer(
                 content: BuildingLabelCard(text: text, isHome: isHome)
-                    .frame(width: 256, height: 64)
+                    .frame(width: 512, height: 128)
             )
             renderer.scale = 2
             #if os(macOS)
@@ -240,7 +244,7 @@ final class GameSceneController: NSObject, ObservableObject, SCNSceneRendererDel
         // Blender's player USD is Z-up. Rotate it into SceneKit's Y-up world
         // before sizing it to a consistent gameplay height.
         let height = max(bounds.max.z - bounds.min.z, 0.001)
-        let scale = 1.98 / height
+        let scale = 2.079 / height
         model.scale = SCNVector3(scale, scale, scale)
         model.eulerAngles.x = -.pi / 2
         model.position.y = -bounds.min.z * scale
@@ -554,11 +558,13 @@ private struct BuildingLabelCard: View {
 
     var body: some View {
         Text(text)
-            .font(.system(size: isHome ? 23 : 18, weight: .bold, design: .rounded))
+            .font(.system(size: isHome ? 42 : 36, weight: .bold, design: .rounded))
+            .lineLimit(1)
+            .minimumScaleFactor(0.82)
             .foregroundStyle(
                 isHome
-                    ? Color(red: 0.65, green: 1, blue: 0.22)
-                    : Color(red: 0.82, green: 0.9, blue: 1)
+                    ? Color(red: 1, green: 0.82, blue: 0.12)
+                    : Color(red: 0.65, green: 1, blue: 0.22)
             )
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(
@@ -569,8 +575,8 @@ private struct BuildingLabelCard: View {
                 RoundedRectangle(cornerRadius: 15, style: .continuous)
                     .stroke(
                         isHome
-                            ? Color(red: 0.65, green: 1, blue: 0.22).opacity(0.8)
-                            : Color.white.opacity(0.22),
+                            ? Color(red: 1, green: 0.82, blue: 0.12).opacity(0.9)
+                            : Color(red: 0.65, green: 1, blue: 0.22).opacity(0.55),
                         lineWidth: isHome ? 2.5 : 1.5
                     )
             }

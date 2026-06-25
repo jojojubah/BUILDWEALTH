@@ -16,8 +16,12 @@ final class TrafficController {
 
     private var vehicles: [Vehicle] = []
     private let wheelRadius: Float = 0.34
-    private let playerStopDistance: Float = 3.2
     private let playerHardClearance: Float = 1.75
+    private let stoppedVehicleSpacing: Float = 3.8
+    private let fullSpeedVehicleSpacing: Float = 8.0
+    private let playerLaneHalfWidth: Float = 1.65
+    private let playerStopDistance: Float = 2.6
+    private let playerYieldDistance: Float = 5.2
 
     init(cityRoot: SCNNode, manifest: TrafficManifest) {
         for record in manifest.vehicles {
@@ -46,58 +50,52 @@ final class TrafficController {
 
     func update(deltaTime: Float, playerPosition: SIMD3<Float>) {
         guard deltaTime > 0 else { return }
-        let snapshots = vehicles.map {
-            SIMD2<Float>($0.node.simdWorldPosition.x, $0.node.simdWorldPosition.z)
-        }
-        let directions = vehicles.map {
-            segmentDirection(for: $0).sceneDirection
-        }
+        let step = min(deltaTime, 1.0 / 20.0)
+        let pathDistances = vehicles.map(distanceAlongPath)
 
         for index in vehicles.indices {
             var vehicle = vehicles[index]
             let direction = segmentDirection(for: vehicle)
-            let worldPosition = snapshots[index]
+            let worldPosition = SIMD2<Float>(
+                vehicle.node.simdWorldPosition.x,
+                vehicle.node.simdWorldPosition.z
+            )
             let playerDelta = SIMD2<Float>(
                 playerPosition.x - worldPosition.x,
                 playerPosition.z - worldPosition.y
             )
 
             var targetSpeed = vehicle.topSpeed
-            if simd_length(playerDelta) < playerStopDistance {
-                targetSpeed = 0
+
+            if let gap = forwardGap(
+                for: index,
+                pathDistances: pathDistances
+            ) {
+                let spacingFactor = min(
+                    max(
+                        (gap - stoppedVehicleSpacing)
+                            / (fullSpeedVehicleSpacing - stoppedVehicleSpacing),
+                        0
+                    ),
+                    1
+                )
+                targetSpeed = min(targetSpeed, vehicle.topSpeed * spacingFactor)
             }
 
-            for otherIndex in vehicles.indices where otherIndex != index {
-                let delta = snapshots[otherIndex] - worldPosition
-                let distance = simd_length(delta)
-                if vehicles[otherIndex].path.name == vehicle.path.name,
-                   distance < 5.0,
-                   simd_dot(simd_normalize(delta), direction.sceneDirection) > 0.65 {
-                    targetSpeed = min(targetSpeed, max(0, (distance - 2.4) * 2.5))
-                }
-
-                // At crossing lanes, the lower-index vehicle owns the
-                // intersection for this frame and the other eases off.
-                if vehicles[otherIndex].path.name != vehicle.path.name,
-                   otherIndex < index {
-                    let horizon: Float = 0.65
-                    let selfPrediction = worldPosition
-                        + direction.sceneDirection * max(vehicle.speed, targetSpeed * 0.55) * horizon
-                    let otherPrediction = snapshots[otherIndex]
-                        + directions[otherIndex]
-                            * max(vehicles[otherIndex].speed, vehicles[otherIndex].topSpeed * 0.55)
-                            * horizon
-                    if simd_distance(selfPrediction, otherPrediction) < 2.4 {
-                        targetSpeed = 0
-                    }
-                }
-            }
+            targetSpeed = min(
+                targetSpeed,
+                playerYieldSpeed(
+                    for: vehicle,
+                    playerDelta: playerDelta,
+                    direction: direction.sceneDirection
+                )
+            )
 
             let acceleration: Float = targetSpeed < vehicle.speed ? 18 : 7
-            vehicle.speed += min(abs(targetSpeed - vehicle.speed), acceleration * deltaTime)
+            vehicle.speed += min(abs(targetSpeed - vehicle.speed), acceleration * step)
                 * (targetSpeed >= vehicle.speed ? 1 : -1)
 
-            let distance = vehicle.speed * deltaTime
+            let distance = vehicle.speed * step
             let previousSegment = vehicle.segment
             let previousProgress = vehicle.progress
             advance(&vehicle, distance: distance)
@@ -122,6 +120,82 @@ final class TrafficController {
                 }
             }
             vehicles[index] = vehicle
+        }
+    }
+
+    private func playerYieldSpeed(
+        for vehicle: Vehicle,
+        playerDelta: SIMD2<Float>,
+        direction: SIMD2<Float>
+    ) -> Float {
+        let forwardDistance = simd_dot(playerDelta, direction)
+        let lateralDistance = abs(
+            playerDelta.x * direction.y - playerDelta.y * direction.x
+        )
+
+        // Cars only yield to a player who is ahead and within their lane.
+        // Nearby players on the pavement, behind a car, or in the opposite
+        // lane no longer stop the whole traffic loop.
+        guard lateralDistance < playerLaneHalfWidth,
+              forwardDistance > -0.25,
+              forwardDistance < playerYieldDistance else {
+            return vehicle.topSpeed
+        }
+
+        let yieldFactor = min(
+            max(
+                (forwardDistance - playerStopDistance)
+                    / (playerYieldDistance - playerStopDistance),
+                0
+            ),
+            1
+        )
+        return vehicle.topSpeed * yieldFactor
+    }
+
+    private func forwardGap(
+        for vehicleIndex: Int,
+        pathDistances: [Float]
+    ) -> Float? {
+        let vehicle = vehicles[vehicleIndex]
+        let loopLength = pathLength(vehicle.path)
+        guard loopLength > 0 else { return nil }
+
+        var closestGap: Float?
+        for otherIndex in vehicles.indices where otherIndex != vehicleIndex {
+            guard vehicles[otherIndex].path.name == vehicle.path.name else {
+                continue
+            }
+
+            var gap = pathDistances[otherIndex] - pathDistances[vehicleIndex]
+            if gap <= 0 { gap += loopLength }
+            if closestGap == nil || gap < closestGap! {
+                closestGap = gap
+            }
+        }
+        return closestGap
+    }
+
+    private func distanceAlongPath(_ vehicle: Vehicle) -> Float {
+        let points = vehicle.path.points
+        var distance: Float = 0
+
+        for segment in 0..<vehicle.segment {
+            let next = (segment + 1) % points.count
+            distance += simd_distance(points[segment], points[next])
+        }
+
+        let next = (vehicle.segment + 1) % points.count
+        distance += simd_distance(points[vehicle.segment], points[next])
+            * vehicle.progress
+        return distance
+    }
+
+    private func pathLength(_ path: TrafficPathRecord) -> Float {
+        let points = path.points
+        return points.indices.reduce(0) { total, segment in
+            let next = (segment + 1) % points.count
+            return total + simd_distance(points[segment], points[next])
         }
     }
 

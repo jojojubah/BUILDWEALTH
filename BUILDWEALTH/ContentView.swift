@@ -4,6 +4,7 @@ struct ContentView: View {
     @StateObject private var game = GameSceneController()
     @State private var launchPhase: LaunchPhase = .logo
     @State private var showsWelcome = false
+    @State private var showsPlayerStats = false
 
     var body: some View {
         ZStack {
@@ -13,6 +14,18 @@ struct ContentView: View {
             GameView(controller: game)
                 .ignoresSafeArea()
 
+            if showsPlayerStats {
+                Color.black.opacity(0.001)
+                    .ignoresSafeArea()
+                    .contentShape(Rectangle())
+                    .onTapGesture {
+                        withAnimation(.easeOut(duration: 0.16)) {
+                            showsPlayerStats = false
+                        }
+                    }
+                    .zIndex(1)
+            }
+
             VStack {
                 HStack(alignment: .top) {
                     VStack(alignment: .leading, spacing: 10) {
@@ -20,17 +33,20 @@ struct ContentView: View {
                         clock
                     }
                     Spacer()
-                    wallet
+                    HStack(alignment: .top, spacing: 10) {
+                        PlayerStatsMenu(isExpanded: $showsPlayerStats)
+                        wallet
+                    }
                 }
                 Spacer()
 
                 #if os(iOS)
-                HStack(alignment: .bottom) {
+                HStack {
+                    Spacer()
                     VirtualStick { vector in
                         game.setInput(vector)
                     }
                     Spacer()
-                    actionButton
                 }
                 #else
                 HStack {
@@ -43,6 +59,7 @@ struct ContentView: View {
                 #endif
             }
             .padding(24)
+            .zIndex(2)
 
             if let destination = game.activeInterior {
                 InteriorView(destination: destination) {
@@ -137,15 +154,84 @@ struct ContentView: View {
         }
     }
 
-    private var actionButton: some View {
-        Button(action: game.interact) {
-            Image(systemName: "arrow.up.forward")
-                .font(.system(size: 22, weight: .bold))
-                .frame(width: 62, height: 62)
-                .background(Color.white.opacity(0.14), in: Circle())
-                .overlay(Circle().stroke(.white.opacity(0.28), lineWidth: 1))
+}
+
+struct PlayerStatsMenu: View {
+    @Binding var isExpanded: Bool
+
+    var body: some View {
+        VStack(alignment: .trailing, spacing: 8) {
+            Button {
+                withAnimation(.spring(response: 0.24, dampingFraction: 0.82)) {
+                    isExpanded.toggle()
+                }
+            } label: {
+                Image(systemName: "person.crop.circle.badge.questionmark")
+                    .font(.system(size: 17, weight: .bold))
+                    .foregroundStyle(Color(red: 0.65, green: 1, blue: 0.22))
+                    .frame(width: 38, height: 34)
+                    .background(.black.opacity(0.62), in: Capsule())
+                    .overlay {
+                        Capsule()
+                            .stroke(.white.opacity(0.14), lineWidth: 1)
+                    }
+            }
+            .buttonStyle(.plain)
+            .accessibilityLabel(isExpanded ? "Close player stats" : "Show player stats")
+
+            if isExpanded {
+                VStack(spacing: 0) {
+                    statRow(
+                        symbol: "heart.circle.fill",
+                        title: "Karma",
+                        value: "0",
+                        color: Color(red: 1, green: 0.72, blue: 0.2)
+                    )
+
+                    Divider()
+                        .overlay(.white.opacity(0.12))
+
+                    statRow(
+                        symbol: "brain.head.profile.fill",
+                        title: "Intelligence",
+                        value: "0",
+                        color: Color(red: 0.42, green: 0.75, blue: 1)
+                    )
+                }
+                .frame(width: 190)
+                .background(.black.opacity(0.9), in: RoundedRectangle(cornerRadius: 14))
+                .overlay {
+                    RoundedRectangle(cornerRadius: 14)
+                        .stroke(.white.opacity(0.16), lineWidth: 1)
+                }
+                .shadow(color: .black.opacity(0.45), radius: 16, y: 8)
+                .transition(.scale(scale: 0.92, anchor: .topTrailing).combined(with: .opacity))
+            }
         }
-        .buttonStyle(.plain)
+    }
+
+    private func statRow(
+        symbol: String,
+        title: String,
+        value: String,
+        color: Color
+    ) -> some View {
+        HStack(spacing: 10) {
+            Image(systemName: symbol)
+                .foregroundStyle(color)
+                .frame(width: 22)
+
+            Text(title)
+                .font(.system(size: 14, weight: .semibold, design: .rounded))
+
+            Spacer()
+
+            Text(value)
+                .font(.system(size: 14, weight: .bold, design: .monospaced))
+                .foregroundStyle(.white)
+        }
+        .padding(.horizontal, 14)
+        .frame(height: 44)
     }
 }
 
