@@ -1,3 +1,3 @@
 *.blend binary
 *.usdz binary
-
+Assets/Characters/Textures/*.png binary
